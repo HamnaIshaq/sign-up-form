@@ -1,0 +1,268 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --darkGreen: #273a14;
+  --veryLightGray: #fbfbfb;
+  --lightGreen: #6e8f58;
+  --lightBrown: #815b48;
+  --gray: #8c9892;
+  --lightPink: #bba8a8;
+  --lightGray: #c2c6c9;
+  --dirtyGreen: #596d48;
+  --brightGreen: #5c9438;
+  --white: #ffffff;
+  --focusBlue: #9eb2ed;
+  --inValidRed: #d77e7e;
+}
+
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("../assets/fonts/Norse-Bold.otf") format("opentype");
+}
+/*font-family: "Norse-Bold";*/
+body {
+  
+  font-family: 'Arimo', sans-serif;
+  background-color: var(--veryLightGray);
+}
+
+.row {
+  display: flex;
+}
+
+.full-screen-height{
+  height: 100vh;
+}
+
+.container {
+  width: 75%;
+  margin-left: 2.81em;
+}
+
+.max-container {
+  max-width: 850px;
+}
+
+.bg-container {
+  width: 481px;
+  height: auto;
+  position: relative;
+}
+
+.bg-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-container {
+  width: 100%;
+  position: absolute;
+  top: 15%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 100px;
+}
+
+.logo-title {
+  font-family: "Norse-Bold";
+  color: var(--white);
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+}
+
+.attribution-container {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.attribution {
+  color: var(--white);
+  font-size: 0.7rem;
+}
+
+.form {
+  background-color: var(--white);
+  box-shadow: 0 4px 9px var(--lightGray);
+  padding: 1em 0;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.flex-top {
+  justify-content: flex-start;
+}
+
+.title-container {
+  margin-top: 2em;
+}
+
+h2,
+h3,
+.title-form {
+  font-size: 1.25rem;
+}
+
+h2{
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  margin-bottom: 1em;
+}
+
+.title-form {
+  color: var(--dirtyGreen);
+  font-weight: bold;
+}
+
+.control {
+  gap: 5em;
+  margin-bottom: 1em;
+}
+
+.label-control {
+  text-transform: uppercase;
+  color: var(--darkGreen);
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 0.625rem;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-input {
+  height: 30px;
+  border-radius: 5px;
+  border: .5px solid var(--lightGray);
+}
+
+.form-input:focus {
+  border: 2px solid var(--focusBlue);
+  outline: none;
+  box-shadow: 0 2px 5px var(--lightGray);
+}
+
+.error {
+  border: 2px solid var(--inValidRed);
+}
+
+.valid {
+  border: 2px solid var(--lightGreen);
+}
+
+.password-msg {
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.error-password {
+  color: var(--inValidRed);
+}
+
+.valid-password {
+  color: var(--lightGreen);
+}
+
+
+.form-control > *{
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-create-account {
+  text-transform: capitalize;
+  color: var(--white);
+  background-color: var(--dirtyGreen);
+  font-weight: bold;
+  padding: 1em 3em;
+  border-radius: 10px;
+  margin: 2em 0;
+  border: 2px solid var(--dirtyGreen);
+  box-shadow: 0 4px 5px var(--lightGray);
+}
+
+.btn-create-account:focus,
+.btn-create-account:hover {
+  color: var(--dirtyGreen);
+  background-color: var(--white);
+}
+
+.btn-log-in {
+  color: var(--dirtyGreen);
+}
+
+.btn-log-in:focus,
+.btn-log-in:hover {
+  text-decoration: underline;
+}
+
+.para-log-in {
+  margin: 0;
+}
+
+.wrapper > .bg-container {
+  width: 30%;
+}
+
+.wrapper > .main-content-container {
+  width: 70%;
+}
+
+.submit-container {
+  position: relative;
+}
+
+.submit-msg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.submit-show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.submit-msg-container {
+  background-color: var(--darkGreen);
+  border-radius: 10px;
+}
+
+.para-submit-msg {
+  padding: 0 1em;
+  color: var(--white);
+}
