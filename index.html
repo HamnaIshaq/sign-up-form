@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script async src="./js/app.js"></script>
+
+</head>
+<body>
+
+  <div class="row full-screen-height wrapper">
+    <div class="bg-container">
+      <img class="bg-img" src="./assets/images/leaf-bg.jpg" alt="leaf background">
+
+      <div class="logo-container">
+        <img class="logo-img" src="./assets/images/fire-logo.png" alt="fire logo">
+        <h1 class="logo-title">ignis</h1>
+      </div>
+
+      <p class="attribution-container attribution">
+        Photo by 
+        <a class="attribution" href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+          Halie West
+        </a> 
+        on 
+        <a class="attribution" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+          Unsplash
+        </a>
+      </p>
+    </div>
+    <div class="main-content-container row flex-dir-col flex-top full-screen-height">
+      <div class="container max-container title-container">
+        <h2>This is not a real online service! You know you need something like this
+          to help realize your deepest dreams.<br />
+          Sign up <i>now</i> you want to.
+        </h2>
+        <h3>You <i>know</i> you want to</h3>
+      </div>
+
+      <form action="#" method="#">
+        <div class="form">
+          <div class="container form-container">
+            <p class="title-form">Let's do this</p>
+          
+            <div class="row control">
+              <div class="form-control">
+                <label for="first_name" class="label-control">first name</label>
+                <input type="text" id="first_name" name="user_first_name" class="form-input" required>
+              </div>
+          
+              <div class="form-control">
+                <label for="last_name" class="label-control">last name</label>
+                <input type="text" id="last_name" name="user_last_name" class="form-input" required>
+              </div>
+            </div>
+          
+            <div class="row control">
+              <div class="form-control">
+                <label for="email" class="label-control">email</label>
+                <input type="email" id="email" name="user_email" class="form-input" required>
+              </div>
+          
+              <div class="form-control">
+                <label for="phone_number" class="label-control">phone number</label>
+                <input type="tel" id="phone_number" name="user_phone_number" class="form-input" required>
+              </div>
+            </div>
+          
+            <div class="row control">
+              <div class="form-control">
+                <label for="password" class="label-control">password</label>
+                <input type="password" id="password" name="user_password" class="form-input password-input error" required>
+                <span class="password-msg error-password">* Passwords do not match</span>
+              </div>
+          
+              <div class="form-control">
+                <label for="confirm_password" class="label-control">confirm password</label>
+                <input type="password" id="confirm_password" class="form-input password-input error" required>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="container submit-container">
+          <button type="submit" value="submit" class="btn btn-create-account">create account</button>
+          <div class="submit-msg">
+            <div class="submit-msg-container">
+              <p class="para-submit-msg">Thanks for creating an account!</p>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+      <div class="container">
+        <p class="para-log-in">Already have an account? 
+          <button type="button" class="btn btn-log-in">
+            <b>Log in</b>
+          </button>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
