@@ -15,7 +15,7 @@ confirmPassword.addEventListener('input', () => {
   checkPassword();
 })
 
-submitBtn.addEventListener('click', (e) => {
+submitBtn.addEventListener('click', () => {
   
   if(userFirstName.value === '' || userLastName.value === '' || userEmail.value === '' || userPhoneNumber.value === '' || password.value === '' || confirmPassword.value === '') {
     console.log('empty input');
@@ -33,7 +33,7 @@ submitBtn.addEventListener('click', (e) => {
     }, 1500)
   
   }
-  e.preventDefault();
+  
 })
 
 
