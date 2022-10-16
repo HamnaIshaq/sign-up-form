@@ -17,8 +17,6 @@ confirmPassword.addEventListener('input', () => {
 
 submitBtn.addEventListener('click', (e) => {
   
-  e.preventDefault();
-
   if(userFirstName.value === '' || userLastName.value === '' || userEmail.value === '' || userPhoneNumber.value === '' || password.value === '' || confirmPassword.value === '') {
     console.log('empty input');
   }
@@ -33,8 +31,9 @@ submitBtn.addEventListener('click', (e) => {
     setTimeout(function () {
       submitMsg.classList.remove('submit-show');
     }, 1500)
-
+  
   }
+  e.preventDefault();
 })
 
 
